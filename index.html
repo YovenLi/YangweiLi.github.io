@@ -3,72 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yangwei Li - Point Cloud Research</title>
+    <title>Yangwei Li | Point Cloud Quality Assessment</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <a href="#about">About</a>
-            <a href="#research">Research</a>
-            <a href="#publications">Publications</a>
-            <a href="#contact">Contact</a>
+    <header id="home">
+        <div class="overlay"></div>
+        <div class="profile-container">
+            <div class="profile-image">
+                <!-- 此处放置您的个人照片 -->
+                <img src="images/profile.jpg" alt="Yangwei Li">
+            </div>
+            <div class="profile-text">
+                <h1>Yangwei Li</h1>
+                <h2>Master Student in Point Cloud Quality Assessment</h2>
+                <p>Beijing Technology and Business University (BTBU)</p>
+                <div class="social-links">
+                    <a href="mailto:your-email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/YovenLi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                </div>
+            </div>
         </div>
-    </nav>
+        <nav>
+            <div class="nav-container">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#publications">Publications</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-    <div class="container">
-        <header>
-            <h1>Yangwei Li</h1>
-            <p class="subtitle">Master Student in Point Cloud Quality Assessment</p>
-            <p class="institution">Beijing Technology and Business University (BTBU)</p>
-        </header>
-
-        <section id="about">
+    <main>
+        <section id="about" class="card">
             <h2>About Me</h2>
-            <p>I am a first-year Master's student at Beijing Technology and Business University (BTBU), supervised by Prof. Xiaochuan Wang. My research focuses on Point Cloud Quality Assessment (PCQA), aiming to develop robust methods for evaluating and improving the quality of 3D point cloud data.</p>
+            <div class="section-content">
+                <p>I am a first-year Master's student at Beijing Technology and Business University (BTBU), supervised by Prof. Xiaochuan Wang. My research focuses on Point Cloud Quality Assessment (PCQA), aiming to develop robust methods for evaluating and improving the quality of 3D point cloud data.</p>
+                <p>My current work involves exploring novel deep learning architectures for point cloud processing and quality evaluation, with particular emphasis on developing metrics that align with human perception of visual quality.</p>
+            </div>
         </section>
 
-        <section id="research">
+        <section id="research" class="card">
             <h2>Research Interests</h2>
             <div class="research-grid">
                 <div class="research-item">
-                    <div class="research-icon">🔍</div>
+                    <div class="research-icon">
+                        <!-- 点云质量评价图标 -->
+                        <img src="images/pcqa-icon.png" alt="PCQA">
+                    </div>
                     <h3>Point Cloud Quality Assessment</h3>
-                    <p>Developing metrics and methods for evaluating point cloud quality</p>
+                    <p>Developing objective and subjective metrics for evaluating the perceptual quality of 3D point clouds.</p>
                 </div>
+                
                 <div class="research-item">
-                    <div class="research-icon">🎯</div>
+                    <div class="research-icon">
+                        <!-- 3D视觉图标 -->
+                        <img src="images/3d-vision-icon.png" alt="3D Vision">
+                    </div>
                     <h3>3D Vision</h3>
-                    <p>Processing and analysis of 3D point cloud data</p>
+                    <p>Techniques for processing, analyzing, and understanding 3D point cloud data for various applications.</p>
                 </div>
+                
                 <div class="research-item">
-                    <div class="research-icon">🧠</div>
+                    <div class="research-icon">
+                        <!-- 深度学习图标 -->
+                        <img src="images/deep-learning-icon.png" alt="Deep Learning">
+                    </div>
                     <h3>Deep Learning</h3>
-                    <p>Applied to point cloud processing and quality assessment</p>
+                    <p>Applying deep neural networks to point cloud processing tasks including classification, segmentation, and quality assessment.</p>
                 </div>
             </div>
         </section>
 
-        <section id="education">
+        <section id="publications" class="card">
+            <h2>Publications</h2>
+            <div class="section-content">
+                <p class="placeholder-text">Your publications will be listed here. Currently pursuing research for upcoming publications.</p>
+                <!-- 未来发表的论文将显示在这里 -->
+            </div>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <!-- 项目1图片 -->
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="Point Cloud Quality Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Point Cloud Quality Metrics</h3>
+                        <p>Development of novel metrics for assessing the perceptual quality of 3D point clouds, considering geometric and attribute distortions.</p>
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <!-- 项目2图片 -->
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="Deep Learning Framework">
+                    </div>
+                    <div class="project-info">
+                        <h3>Deep Learning Framework for PCQA</h3>
+                        <p>A deep neural network approach for point cloud quality assessment that correlates with human subjective ratings.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="card">
             <h2>Education</h2>
             <div class="education-item">
-                <div class="year">2024 - Present</div>
-                <div class="degree">
+                <div class="education-year">2024 - Present</div>
+                <div class="education-details">
                     <h3>Master's Degree in Computer Science</h3>
-                    <p>Beijing Technology and Business University</p>
-                    <p>Supervisor: Prof. Xiaochuan Wang</p>
+                    <p class="institution">Beijing Technology and Business University</p>
+                    <p class="supervisor">Supervisor: Prof. Xiaochuan Wang</p>
+                </div>
+            </div>
+            <!-- 您可以在此添加本科等其他教育经历 -->
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact</h2>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Location: Beijing Technology and Business University, Beijing, China</p>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <p>GitHub: <a href="https://github.com/YovenLi" target="_blank">YovenLi</a></p>
                 </div>
             </div>
         </section>
+    </main>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <p><span class="icon">📧</span> Email: [Your Email]</p>
-                <p><span class="icon">📍</span> Location: Beijing Technology and Business University, Beijing, China</p>
-                <p><span class="icon">🔗</span> GitHub: [Your GitHub]</p>
-            </div>
-        </section>
-    </div>
+    <footer>
+        <p>&copy; 2024 Yangwei Li. All rights reserved.</p>
+        <p>Last updated: October 2024</p>
+    </footer>
 </body>
 </html>
